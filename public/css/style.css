@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #FFF;
+}
+
+body{
+    background-color: #171922;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    padding: 20px 10%;
+}
+
+/* Navigation Bar */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 85px;
+    cursor: pointer;
+}
+nav .menu-img{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+}
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 0;
+    background: #768fff;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height 0.5s;
+}
+nav ul li a:hover::before{
+    height: 85px;
+}
+nav ul li a.active{
+    color: #768fff;
+}
+nav ul li a:hover{
+    color: #000;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+.content-img{
+    width: 80%;
+    margin-top: 10px;
+}
+.col h1{
+    margin-top: 180px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 190px;
+}
+.col h5{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 190px;
+}
+.col a{
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: #768fff;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 50px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 01);
+    margin-left: 190px;
+}
+.thumbnail-img{
+    width: 280px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 01);
+}
